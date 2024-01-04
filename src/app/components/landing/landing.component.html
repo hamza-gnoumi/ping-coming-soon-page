@@ -1,0 +1,48 @@
+<div class="landing  ">
+  <img src="../../../assets/images/logo.svg" alt="logo-ping">
+  <header class="mt-4">
+    <h1> We are launching <span>soon!</span> </h1>
+    <p>Subscribe and get notified</p>
+  </header>
+  <form>
+
+    <div class="mb-3 field">
+      <div class="mb-3 mail">
+        <input type="email" class="form-control rounded-pill ps-4 py-3" id="email" placeholder="Your email address..."
+          required ngModel name="email" #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          [ngClass]="{'dirt' : email.invalid && (email.dirty || email.touched)}">
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="wrong ms-lg-4 text-lg-start">
+          Please provide a valid email address
+        </div>
+      </div>
+      <div class="mb-3 notify">
+        <button type="submit" class="btn btn-primary rounded-pill py-3  px-5">Notify me</button>
+      </div>
+    </div>
+
+
+  </form>
+
+  <div class="image">
+    <img src="../../../assets/images/illustration-dashboard.png" alt="dashboard">
+  </div>
+
+  <div class="social">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+
+
+  </div>
+  <!-- </header>
+  <form #myForm="ngModel">
+
+    <input type="email" id="name" name="name" class="form-control" required ngModel="email" />
+
+    <div *ngIf="myForm.email.invalid && (email.dirty || email.touched)" class="alert">
+      <div *ngIf="email.errors?.['required']">Name is required.</div>
+    </div>
+  </form> -->
+
+  <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+</div>

@@ -1,0 +1,120 @@
+.landing {
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 60px;
+
+}
+
+.landing header h1 {
+  color: var(--Gray);
+  font-size: clamp(20px, 4vw, 48px);
+
+}
+
+.landing header h1 span {
+  font-weight: bold;
+  color: var(--Very-Dark-Blue);
+
+}
+
+.landing header p {
+  color: var(--Very-Dark-Blue);
+  font-size: clamp(12px, 3vw, 20px);
+
+}
+
+
+
+.field {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+form .field .mail {
+  flex-basis: 420px;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+form input::placeholder {
+  color: var(--Pale-Blue);
+}
+
+form .field .notify {
+  flex-basis: 200px;
+
+}
+
+.dirt {
+  border-color: var(--Light-Red);
+}
+
+
+.wrong {
+  color: var(--Light-Red);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+form button {
+  background-color: var(--Blue);
+  width: 100%;
+  box-shadow: var(--Pale-Blue) 0px 5px 15px;
+}
+
+form button:hover {
+  opacity: 80%;
+}
+
+
+
+.image img {
+
+  margin-top: clamp(30px, 4vw, 90px);
+  margin-bottom: 80px;
+  width: 642px;
+  max-width: 100%;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social svg {
+  color: var(--Blue);
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 50%;
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+
+}
+
+.social svg:hover {
+  color: white;
+  background-color: var(--Blue);
+}
+
+@media (max-width : 768px) {
+
+  .field {
+    * {
+      flex-basis: 90% !important;
+      font-size: 12px;
+    }
+  }
+}
+
+.copyright {
+  margin-top: 20px;
+  color: var(--Gray);
+  font-size: 12px;
+}

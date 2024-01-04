@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  // Primary
+
+  --Blue: hsl(223, 87%, 63%);
+
+  // Secondary
+
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+
+  // Neutral
+
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+  font-family: 'Libre Franklin', sans-serif;
+  box-sizing: border-box;
+}
